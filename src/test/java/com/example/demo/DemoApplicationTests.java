@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -7,7 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DemoApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void exampleTest() {
+		int actual = 1;
+		int expected = 1;
+		Assertions.assertThat(actual).isEqualTo(expected);
 	}
 
 }
